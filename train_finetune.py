@@ -80,6 +80,7 @@ def main(opt):
     diffusion = Diffusion(device=device, noise_offset=opt.noise_offset)
 
     '''load pretrained ocr model'''
+    # PROBLEM:
     ocr_model = HTRNet(nclasses = len(letters), vae=True)
     if len(opt.ocr_model) > 0:
         miss, unxep = ocr_model.load_state_dict(torch.load(opt.ocr_model, map_location=torch.device('cpu')), strict=False)

@@ -29,6 +29,6 @@ TEST:
   IMG_W: 64
 DATA_LOADER:
   NUM_THREADS: 8
-  IAMGE_PATH: ./data/dss
-  STYLE_PATH: ./data/dss
-  LAPLACE_PATH: ./data/dss_laplace
+  IAMGE_PATH: ./data/dss/dss-new
+  STYLE_PATH: ./data/dss/dss-new
+  LAPLACE_PATH: ./data/dss/dss_laplace
