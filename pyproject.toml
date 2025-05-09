@@ -95,6 +95,9 @@ webencodings = "^0.5.1"
 websocket-client = "^1.8.0"
 widgetsnbextension = "^4.0.14"
 zipp = "^3.21.0"
+tensorboardx = "^2.6.2.2"
+omegaconf = "^2.3.0"
+accelerate = "^1.6.0"
 
 
 

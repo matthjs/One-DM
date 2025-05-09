@@ -81,6 +81,12 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 test.py \
     --one_dm ./Saved/IAM64_finetune/English-timestamp/model/epoch-ckpt.pt \
     --generate_type oov_u --dir ./Generated/English
 ```
+
+For a single GPU setting you can remove the CUDA_VISIBLE_DEVICES and nproc_per_node to 1. For example:
+```Shell
+ torchrun --nproc_per_node=1 test.py  --     --one_dm ./model_zoo/One-DM-ckpt.pt   --generate_type oov_u --dir ./Generated/English
+```
+
 **Note**:
 Please modify ``timestamp`` and ``epoch`` according to your own path.
 ## 📺 Exhibition
